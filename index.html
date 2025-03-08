@@ -20,11 +20,13 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Webstudio</title>
   </head>
+
   <body>
     <header class="header">
       <div class="container header-container">
         <nav class="nav-header">
           <a class="logo" href="./index.html">Web<span class="logo-style">Studio</span></a>
+
           <ul class="nav-list-header">
             <li class="nav-header-item">
               <a class="nav-header-link current" href="./index.html">Studio</a>
@@ -43,9 +45,13 @@
             </li>
           </ul>
         </address>
+        <button class="btn-mob-menu" type="button">
+          <svg class="btn-mob-icon" height="24" width="24">
+            <use href="./images/icons.svg#icon-btn-mob-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
-
     <main>
       <section class="hero" id="hero">
         <div class="container">
@@ -110,7 +116,7 @@
         </div>
       </section>
 
-      <section class="team" id="team">
+      <!-- <section class="team" id="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -288,9 +294,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="portfolio" id="portfolio">
+      <!-- <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -404,10 +410,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-content">
         <div class="footer-logo-text">
           <a class="footer-logo" href="./index.html"
@@ -473,9 +479,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- #region backdrop -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="close-btn" type="button">
           <svg class="close-icon" height="8" width="8">
@@ -565,5 +571,64 @@
       </div>
     </div>
     <!-- #endregion backdrop -->
+
+    <!-- #region mobile-menu -->
+    <div class="mobile-menu">
+      <button class="close-btn-menu" type="button">
+        <svg class="close-icon" height="8" width="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mob-nav">
+        <ul class="mob-nav-list">
+          <li class="mob-nav-item">
+            <a class="mob-nav-link current-mob" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-nav-item"><a class="mob-nav-link" href="">Portfolio</a></li>
+          <li class="mob-nav-item"><a class="mob-nav-link" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="mob-addr">
+        <ul class="mob-addr-list">
+          <li class="mob-addr-item">
+            <a class="mob-addr-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="mob-addr-item">
+            <a class="mob-addr-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+      <ul class="mob-menu-socials">
+        <li class="mob-socials-item">
+          <a class="mob-socials-links" href="">
+            <svg class="mob-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-socials-item">
+          <a class="mob-socials-links" href="">
+            <svg class="mob-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-socials-item">
+          <a class="mob-socials-links" href="">
+            <svg class="mob-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-socials-item">
+          <a class="mob-socials-links" href="">
+            <svg class="mob-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- #endregion mobile-menu -->
   </body>
 </html>
